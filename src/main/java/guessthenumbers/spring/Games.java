@@ -17,9 +17,10 @@ public class Games {
     @Column(name = "gusses")
     private Integer guesses;
 
+    @Column(name = "pass")
     private String pass;
 
-
+    @Column(name = "current_guess")
     private Integer currentGuess;
 
     public void setGuesses(Integer guesses) {
@@ -69,14 +70,8 @@ public class Games {
         this.guesses = guesses;
     }
 
-    @Override
-    public String toString() {
-        return "Games{" +
-                "idgeames=" + idgeames +
-                ", Player='" + Player + '\'' +
-                ", guesses=" + guesses +
-                ", pass='" + pass + '\'' +
-                ", currentGuess=" + currentGuess +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return + idgeames + Player + guesses + currentGuess;
+//    }
 }
